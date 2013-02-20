@@ -1,3 +1,6 @@
+==depot
+《Web Design for Developers 4th edition》对应的程序练习 
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
