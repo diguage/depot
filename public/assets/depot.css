@@ -150,3 +150,7 @@
 	color: #bfb;
 	font-size: small;
 }
+
+#store .entry form, #store .entry form div {
+	display: inline;
+}
