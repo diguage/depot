@@ -5,4 +5,8 @@ class LineItem < ActiveRecord::Base
   attr_accessible :cart
   attr_accessible :quantity
   attr_accessible :product_id
+  
+  def total_price
+    product.price * quantity
+  end
 end
