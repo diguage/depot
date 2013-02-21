@@ -42,7 +42,7 @@ class LineItemsController < ApplicationController
   def create
     @cart = current_cart
     product = Product.find(params[:product_id])
-    @line_item = @cart.line_items.build(:product => product)
+    @line_item = @cart.add_product(product.id)
 
     respond_to do |format|
       if @line_item.save
@@ -50,14 +50,14 @@ class LineItemsController < ApplicationController
           :notice => 'Line item was successfully created.') }
         format.xml  { render :xml => @line_item,
           :status => :created, :location => @line_item }
-        #format.json { render json: @line_item, 
-		#status: :created, location: @line_item }
+        format.json { render json: @line_item, 
+		  status: :created, location: @line_item }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @line_item.errors,
           :status => :unprocessable_entity }
-        # format.json { render json: @line_item.errors, 
-		# status: :unprocessable_entity }
+        format.json { render json: @line_item.errors, 
+		  status: :unprocessable_entity }
       end
     end
   end
