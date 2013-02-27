@@ -47,4 +47,9 @@ class ProductTest < ActiveSupport::TestCase
 		  assert new_product(name).invalid?, "#{name} shouldn't be valid"
 	  end
   end
+  test "fixture method" do
+	  puts products(:ruby).title
+	  assert_equal "Programming Ruby 1.9",
+		  products(:ruby).title
+  end
 end
