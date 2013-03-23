@@ -1,4 +1,7 @@
-<% #在第八章有notice这里没用，暂时不加 %>
+<% if notice %>
+	<p id="notice"><%= notice %></p>
+<% end %>
+
 <h1>Your Pragmatic Catalog</h1>
 <% @products.each do |product| %>
 	<div class="entry">
