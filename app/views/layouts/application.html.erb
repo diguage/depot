@@ -14,7 +14,9 @@
   <div id="columns">
     <div id="side">
       <div id="cart">
-        <%= render(@cart) %>
+        <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
+            <%= render(@cart) %>
+        <% end %>
 	  </div>
 	  <ul>
 	    <li><a href="http://127.0.0.1:3000/">Home</a></li>
