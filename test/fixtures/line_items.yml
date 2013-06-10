@@ -1,8 +1,9 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+# Read about fixtures at 
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  product_id: 1
-  cart_id: 1
+  product: ruby
+  order: one
 
 two:
   product_id: 1
