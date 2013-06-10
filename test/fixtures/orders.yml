@@ -1,10 +1,11 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+# Read about fixtures at 
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
+  name: Dave Thomas
   address: MyText
-  email: MyString
-  pay_type: 1
+  email: dave@example.org
+  pay_type: Check
 
 two:
   name: MyString
