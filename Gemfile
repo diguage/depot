@@ -4,6 +4,8 @@ source 'http://ruby.taobao.org/'
 
 gem 'rails', '3.2.12'
 
+gem 'will_paginate', '~> 3.0'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -27,8 +29,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-
-
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
@@ -44,4 +44,4 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
